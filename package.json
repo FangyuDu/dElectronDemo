@@ -1,0 +1,26 @@
+{
+  "name": "delectrondemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run demo1",
+    "demo1": "electron ./demo1/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FangyuDu/dElectronDemo.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "dfy30866@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FangyuDu/dElectronDemo/issues"
+  },
+  "homepage": "https://github.com/FangyuDu/dElectronDemo#readme",
+  "dependencies": {
+    "electron": "^1.7.10"
+  }
+}
