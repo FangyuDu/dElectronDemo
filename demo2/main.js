@@ -1,6 +1,7 @@
 const {
   app,
-  BrowserWindow
+  BrowserWindow,
+  ipcMain
 } = require('electron')
 const path = require('path')
 let mainWindow
@@ -23,7 +24,9 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
-
+ipcMain.on('createFile', (e, v) => {
+  console.log(e, v)
+})
 app.on('activate', function () {
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
